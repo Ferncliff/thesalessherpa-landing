@@ -44,14 +44,30 @@ app.get('/health', (req, res) => {
 // Serve React static files
 app.use(express.static(path.join(__dirname, '../../src/client/build')));
 
-// Handle React routing (serve index.html for non-API routes)
-app.get('*', (req, res) => {
-    // Don't serve React app for API routes
-    if (req.path.startsWith('/api/')) {
-        return res.status(404).json({ error: 'API route not found' });
-    }
-    
+// Handle React routing (serve index.html for frontend routes ONLY)
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+app.get('/dashboard', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+app.get('/fa/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+app.get('/demo', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+app.get('/accounts', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+// 404 for everything else
+app.get('*', (req, res) => {
+    res.status(404).json({ error: 'Route not found' });
 });
 
 // Error handling middleware
