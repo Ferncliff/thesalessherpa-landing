@@ -13,6 +13,11 @@ const ProtectedRoute = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
+      // DEMO MODE: Allow access for VP Sales presentation
+      setIsAuthenticated(true);
+      setIsLoading(false);
+      return;
+      
       // In demo mode or development, allow access
       if (process.env.NODE_ENV === 'development' || process.env.REACT_APP_DEMO_MODE === 'true') {
         setIsAuthenticated(true);
