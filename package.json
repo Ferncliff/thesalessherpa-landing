@@ -10,7 +10,7 @@
     "server:start": "node dist/server/app.js",
     "client:dev": "cd src/client && npm start",
     "client:build": "cd src/client && npm run build",
-    "build": "npm run client:build",
+    "build": "npm run server:build && npm run client:build",
     "start": "npm run server:start",
     "install:all": "npm install && cd src/client && npm install",
     "db:migrate": "psql $DATABASE_URL -f database/schema.sql",
