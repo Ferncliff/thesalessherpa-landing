@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSalesSherpa - Matt Edwards Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #f8fafc; }
+        .header { background: #1e293b; color: white; padding: 1rem 2rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .stat-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .stat-number { font-size: 2rem; font-weight: bold; color: #3b82f6; }
+        .section { background: white; margin: 2rem 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .section-header { padding: 1rem 2rem; border-bottom: 1px solid #e2e8f0; font-size: 1.25rem; font-weight: 600; }
+        .section-content { padding: 2rem; }
+        .account-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+        .account-item { padding: 1rem; border: 1px solid #e2e8f0; border-radius: 6px; }
+        .account-name { font-weight: 600; color: #1e293b; }
+        .account-urgency { font-size: 0.875rem; color: #ef4444; font-weight: 500; }
+        .relationship-item { padding: 1rem; margin: 0.5rem 0; background: #f1f5f9; border-radius: 6px; }
+        .contact-name { font-weight: 600; color: #3b82f6; }
+        .connection-strength { font-size: 0.875rem; color: #059669; }
+        .login-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .login-modal { background: white; padding: 2rem; border-radius: 12px; width: 400px; max-width: 90vw; }
+        .login-input { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border: 1px solid #d1d5db; border-radius: 6px; }
+        .login-btn { width: 100%; padding: 0.75rem; background: #3b82f6; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+        .login-btn:hover { background: #2563eb; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <!-- Login Modal -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-modal">
+            <h2 style="margin-bottom: 1rem; text-align: center;">TheSalesSherpa Login</h2>
+            <p style="color: #6b7280; margin-bottom: 1rem; text-align: center;">Demo Mode: Enter any credentials</p>
+            <input type="email" id="email" class="login-input" placeholder="Email" value="demo@thesalessherpa.ai">
+            <input type="password" id="password" class="login-input" placeholder="Password" value="demo123">
+            <button onclick="login()" class="login-btn">Login to Dashboard</button>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="hidden">
+        <div class="header">
+            <h1>🎯 TheSalesSherpa Dashboard - Matt Edwards</h1>
+            <p>AI-Powered Sales Intelligence • First Advantage Territory</p>
+        </div>
+
+        <div class="container">
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">131</div>
+                    <div>Territory Accounts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">919</div>
+                    <div>Warm Pathways</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div>Intro Success Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$32M</div>
+                    <div>Pipeline Opportunity</div>
+                </div>
+            </div>
+
+            <!-- Top Priority Accounts -->
+            <div class="section">
+                <div class="section-header">🔥 High-Priority Accounts (Real FA Territory Data)</div>
+                <div class="section-content">
+                    <div class="account-list">
+                        <div class="account-item">
+                            <div class="account-name">WPP</div>
+                            <div class="account-urgency">Urgency Score: 95/100</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">100,000+ employees • Advertising</div>
+                        </div>
+                        <div class="account-item">
+                            <div class="account-name">Battelle Memorial Institute</div>
+                            <div class="account-urgency">Urgency Score: 92/100</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">40,000+ employees • Defense/DOE Labs</div>
+                        </div>
+                        <div class="account-item">
+                            <div class="account-name">Uber Technologies</div>
+                            <div class="account-urgency">Urgency Score: 88/100</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">31,000+ employees • Technology</div>
+                        </div>
+                        <div class="account-item">
+                            <div class="account-name">Maximus</div>
+                            <div class="account-urgency">Urgency Score: 87/100</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">30,000+ employees • Healthcare/Government</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Relationship Intelligence -->
+            <div class="section">
+                <div class="section-header">🤝 Warm Introduction Intelligence (The Magic)</div>
+                <div class="section-content">
+                    <p style="margin-bottom: 1rem; color: #374151;"><strong>TheSalesSherpa found 919 warm pathways from your network that you didn't know existed:</strong></p>
+                    
+                    <div class="relationship-item">
+                        <div class="contact-name">Sarah Johnson • WPP</div>
+                        <div class="connection-strength">95% Intro Confidence • Direct Contact • Strong Relationship</div>
+                        <div style="color: #6b7280; margin-top: 0.5rem;">Pathway: You → LinkedIn Connection → Sarah (VP Marketing)</div>
+                    </div>
+
+                    <div class="relationship-item">
+                        <div class="contact-name">Dr. Michael Chen • Battelle</div>
+                        <div class="connection-strength">88% Intro Confidence • Security Clearance Expert</div>
+                        <div style="color: #6b7280; margin-top: 0.5rem;">Pathway: You → Former Colleague → Dr. Chen (Research Director)</div>
+                    </div>
+
+                    <div class="relationship-item">
+                        <div class="contact-name">Jennifer Walsh • Uber</div>
+                        <div class="connection-strength">82% Intro Confidence • 15 Mutual Connections</div>
+                        <div style="color: #6b7280; margin-top: 0.5rem;">Pathway: You → University Alumni → Jennifer (Head of People Operations)</div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #dbeafe; border-radius: 6px;">
+                        <strong>Value Proposition:</strong> 919 warm pathways × 70% avg success rate × $50K average deal size = <strong>$32M pipeline opportunity</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tool Integration Story -->
+            <div class="section">
+                <div class="section-header">⚡ Enhanced Tool Integration</div>
+                <div class="section-content">
+                    <p style="margin-bottom: 1rem;"><strong>"TheSalesSherpa enhances your existing stack, doesn't replace it:"</strong></p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <div style="padding: 1rem; background: #f8fafc; border-radius: 6px;">
+                            <strong>SalesLoft Integration</strong>
+                            <div style="color: #6b7280; margin-top: 0.5rem;">Sequences enhanced with warm intro intelligence</div>
+                        </div>
+                        <div style="padding: 1rem; background: #f8fafc; border-radius: 6px;">
+                            <strong>ZoomInfo Enhancement</strong>
+                            <div style="color: #6b7280; margin-top: 0.5rem;">Contact data enriched with relationship pathways</div>
+                        </div>
+                        <div style="padding: 1rem; background: #f8fafc; border-radius: 6px;">
+                            <strong>LinkedIn Sales Navigator</strong>
+                            <div style="color: #6b7280; margin-top: 0.5rem;">Automated relationship mapping and scoring</div>
+                        </div>
+                        <div style="padding: 1rem; background: #f8fafc; border-radius: 6px;">
+                            <strong>DemandBase Signals</strong>
+                            <div style="color: #6b7280; margin-top: 0.5rem;">Intent data enhanced with warm introduction routes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            document.getElementById('loginOverlay').classList.add('hidden');
+            document.getElementById('dashboard').classList.remove('hidden');
+        }
+
+        // Auto-login after 2 seconds for demo purposes
+        setTimeout(() => {
+            login();
+        }, 2000);
+    </script>
+</body>
+</html>
