@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -40,6 +41,19 @@ app.get('/health', (req, res) => {
     });
 });
 
+// Serve React static files
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+// Handle React routing (serve index.html for non-API routes)
+app.get('*', (req, res) => {
+    // Don't serve React app for API routes
+    if (req.path.startsWith('/api/')) {
+        return res.status(404).json({ error: 'API route not found' });
+    }
+    
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
@@ -47,11 +61,6 @@ app.use((err, req, res, next) => {
         error: 'Internal Server Error',
         message: process.env.NODE_ENV === 'development' ? err.message : undefined
     });
-});
-
-// 404 handler
-app.use('*', (req, res) => {
-    res.status(404).json({ error: 'Route not found' });
 });
 
 app.listen(PORT, () => {
