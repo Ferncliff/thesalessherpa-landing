@@ -41,7 +41,7 @@ app.get('/health', (req, res) => {
     });
 });
 
-// Serve React static files
+// Serve React static files FIRST
 app.use(express.static(path.join(__dirname, '../../src/client/build')));
 
 // Handle React routing (serve index.html for frontend routes ONLY)
@@ -53,10 +53,6 @@ app.get('/dashboard', (req, res) => {
     res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
 });
 
-app.get('/fa/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
-});
-
 app.get('/demo', (req, res) => {
     res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
 });
@@ -65,9 +61,15 @@ app.get('/accounts', (req, res) => {
     res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
 });
 
-// 404 for everything else
+// Handle FA routes (must be after static files)
+app.get('/fa/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
+});
+
+// Catch-all for React Router (SPA)
 app.get('*', (req, res) => {
-    res.status(404).json({ error: 'Route not found' });
+    // Serve index.html for unknown routes (React Router will handle)
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
 });
 
 // Error handling middleware
