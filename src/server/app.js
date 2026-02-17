@@ -42,7 +42,7 @@ app.get('/health', (req, res) => {
 });
 
 // Serve React static files
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../../src/client/build')));
 
 // Handle React routing (serve index.html for non-API routes)
 app.get('*', (req, res) => {
@@ -51,7 +51,7 @@ app.get('*', (req, res) => {
         return res.status(404).json({ error: 'API route not found' });
     }
     
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../../src/client/build', 'index.html'));
 });
 
 // Error handling middleware
