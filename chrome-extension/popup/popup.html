@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheSalesSherpa LinkedIn Connector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="popup-header">
+            <div class="logo">
+                <img src="../icons/icon32.png" alt="TheSalesSherpa" />
+                <h1>Sales Sherpa</h1>
+            </div>
+            <div class="status-indicator" id="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Checking...</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="popup-content" id="popup-content">
+            <!-- Loading State -->
+            <div class="content-section loading-state" id="loading-state">
+                <div class="spinner"></div>
+                <p>Analyzing LinkedIn page...</p>
+            </div>
+
+            <!-- LinkedIn Not Detected -->
+            <div class="content-section not-linkedin hidden" id="not-linkedin">
+                <div class="message-icon">🔍</div>
+                <h3>Navigate to LinkedIn</h3>
+                <p>Visit a LinkedIn profile or your connections page to see warm introduction opportunities.</p>
+                <button class="btn btn-primary" id="open-linkedin">
+                    Open LinkedIn
+                </button>
+            </div>
+
+            <!-- Profile Analysis -->
+            <div class="content-section profile-analysis hidden" id="profile-analysis">
+                <div class="profile-header">
+                    <img class="profile-pic" id="profile-pic" src="" alt="Profile" />
+                    <div class="profile-info">
+                        <h3 id="profile-name">Loading...</h3>
+                        <p id="profile-title">Loading...</p>
+                    </div>
+                </div>
+                
+                <div class="analysis-results">
+                    <!-- Warm Intro Available -->
+                    <div class="result-card warm-intro hidden" id="warm-intro-card">
+                        <div class="card-icon">🔥</div>
+                        <div class="card-content">
+                            <h4>Warm Introduction Available!</h4>
+                            <p class="intro-path"><strong id="intro-degrees">2°</strong> connection via <span id="intro-connector">John Smith</span></p>
+                            <p class="success-rate"><span id="intro-success">73%</span> success rate</p>
+                            <button class="btn btn-primary btn-small" id="get-intro-btn">
+                                Get Introduction
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mutual Connections -->
+                    <div class="result-card mutual-connections hidden" id="mutual-connections-card">
+                        <div class="card-icon">👥</div>
+                        <div class="card-content">
+                            <h4><span id="mutual-count">5</span> Mutual Connections</h4>
+                            <p>Analyze network for warm introduction paths</p>
+                            <button class="btn btn-secondary btn-small" id="analyze-network-btn">
+                                Analyze Network
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- No Connections -->
+                    <div class="result-card no-connections hidden" id="no-connections-card">
+                        <div class="card-icon">📊</div>
+                        <div class="card-content">
+                            <h4>No Direct Connections</h4>
+                            <p>Consider cold outreach or network expansion</p>
+                            <button class="btn btn-secondary btn-small" id="cold-outreach-btn">
+                                Cold Outreach Tips
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connection Sync -->
+            <div class="content-section connection-sync hidden" id="connection-sync">
+                <div class="sync-header">
+                    <div class="message-icon">🔄</div>
+                    <h3>Sync Your Network</h3>
+                    <p>Import your LinkedIn connections to enable warm introduction intelligence.</p>
+                </div>
+                
+                <div class="sync-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="connections-count">0</span>
+                        <span class="stat-label">Connections</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="companies-count">0</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="warm-paths-count">0</span>
+                        <span class="stat-label">Warm Paths</span>
+                    </div>
+                </div>
+
+                <div class="sync-progress hidden" id="sync-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <p class="progress-text" id="progress-text">Syncing connections...</p>
+                </div>
+
+                <button class="btn btn-primary" id="sync-connections-btn">
+                    Import Connections
+                </button>
+            </div>
+
+            <!-- Settings -->
+            <div class="content-section settings hidden" id="settings">
+                <h3>Privacy Settings</h3>
+                
+                <div class="setting-item">
+                    <label class="toggle">
+                        <input type="checkbox" id="auto-analyze" />
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <div class="setting-info">
+                        <h4>Auto-analyze profiles</h4>
+                        <p>Automatically show relationship intelligence when visiting LinkedIn profiles</p>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <label class="toggle">
+                        <input type="checkbox" id="sync-enabled" />
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <div class="setting-info">
+                        <h4>Background sync</h4>
+                        <p>Keep your connection data synchronized with TheSalesSherpa</p>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <label class="toggle">
+                        <input type="checkbox" id="notifications-enabled" />
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <div class="setting-info">
+                        <h4>Warm intro notifications</h4>
+                        <p>Get notified when new warm introduction opportunities are discovered</p>
+                    </div>
+                </div>
+
+                <div class="privacy-note">
+                    <p><strong>Privacy:</strong> Your LinkedIn data is processed locally and only shared with TheSalesSherpa with your explicit consent. You can delete all data at any time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="popup-footer">
+            <div class="footer-nav">
+                <button class="nav-btn active" id="nav-home" data-section="profile-analysis">
+                    <span class="nav-icon">🏠</span>
+                    Home
+                </button>
+                <button class="nav-btn" id="nav-sync" data-section="connection-sync">
+                    <span class="nav-icon">🔄</span>
+                    Sync
+                </button>
+                <button class="nav-btn" id="nav-settings" data-section="settings">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </button>
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://thesalessherpa.ai" target="_blank">Open Dashboard</a>
+                <span class="separator">•</span>
+                <a href="https://thesalessherpa.ai/privacy" target="_blank">Privacy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div class="toast hidden" id="toast">
+        <span class="toast-message" id="toast-message"></span>
+        <button class="toast-close" id="toast-close">×</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

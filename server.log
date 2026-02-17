@@ -1,0 +1,244 @@
+
+> thesalessherpa@1.0.0 dev
+> concurrently "npm run server:dev" "npm run client:dev"
+
+[1] 
+[1] > thesalessherpa@1.0.0 client:dev
+[1] > cd src/client && npm start
+[1] 
+[0] 
+[0] > thesalessherpa@1.0.0 server:dev
+[0] > DEMO_MODE=true ts-node-dev --respawn --transpile-only src/server/app.ts
+[0] 
+[1] 
+[1] > thesalessherpa-client@1.0.0 start
+[1] > react-scripts start
+[1] 
+[0] [INFO] 10:38:03 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+[0] 
+[0] 🎯 ═══════════════════════════════════════════════════════════
+[0]    TheSalesSherpa API Server
+[0]    ═══════════════════════════════════════════════════════════
+[0]    
+[0]    🚀 Running on port 5001
+[0]    📍 Environment: development
+[0]    🔐 Demo Mode: ENABLED
+[0]    
+[0]    API Endpoints:
+[0]    • GET  /api/accounts           - List all accounts
+[0]    • GET  /api/accounts/:id       - Get account details
+[0]    • GET  /api/intelligence/dashboard - Dashboard data
+[0]    • GET  /api/relationships/network  - Network overview
+[0]    • GET  /api/relationships/paths/:id - Find connection path
+[0]    
+[0]    Ready for Feb 17 Demo! 🎯
+[0] ═══════════════════════════════════════════════════════════
+[0]     
+[1] Starting the development server...
+[1] 
+[1] Compiled successfully!
+[1] 
+[1] You can now view thesalessherpa-client in the browser.
+[1] 
+[1]   Local:            http://localhost:3000
+[1]   On Your Network:  http://192.168.4.97:3000
+[1] 
+[1] Note that the development build is not optimized.
+[1] To create a production build, use npm run build.
+[1] 
+[1] webpack compiled successfully
+[0] ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+[0]     at Object.xForwardedForHeader (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express-rate-limit/dist/index.cjs:185:13)
+[0]     at Object.wrappedValidations.<computed> [as xForwardedForHeader] (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express-rate-limit/dist/index.cjs:397:22)
+[0]     at Object.keyGenerator (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express-rate-limit/dist/index.cjs:658:20)
+[0]     at /Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express-rate-limit/dist/index.cjs:710:32
+[0]     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[0]     at /Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express-rate-limit/dist/index.cjs:691:5 {
+[0]   code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+[0]   help: 'https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+[0] }
+[0] GET /api/intelligence/alerts 200 26 - 0.420 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-icon.svg 500 214 - 10.156 ms
+[0] GET /api/intelligence/dashboard 200 - - 3.188 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-logo.svg 500 214 - 1.214 ms
+[0] GET /api/intelligence/alerts 304 - - 0.462 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /manifest.json 500 214 - 1.141 ms
+[0] GET /api/intelligence/dashboard 200 - - 0.425 ms
+[0] GET /images/sherps-mascot.svg 500 214 - 0.826 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-icon.svg 500 214 - 1.392 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-logo.svg 500 214 - 1.277 ms
+[0] GET /api/intelligence/alerts 304 - - 0.336 ms
+[0] GET /api/intelligence/dashboard 200 - - 0.470 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /manifest.json 500 214 - 0.431 ms
+[0] GET /api/intelligence/alerts 304 - - 1.162 ms
+[0] GET /api/intelligence/dashboard 200 - - 1.628 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-mascot.svg 500 214 - 0.845 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-icon.svg 500 214 - 0.711 ms
+[0] GET /api/accounts 200 316536 - 3.751 ms
+[0] GET /api/intelligence/alerts 304 - - 0.351 ms
+[0] GET /images/sherps-icon.svg 500 214 - 2.993 ms
+[0] GET /api/intelligence/dashboard 200 - - 1.510 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-logo.svg 500 214 - 0.940 ms
+[0] GET /api/intelligence/alerts 304 - - 0.445 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /manifest.json 500 214 - 1.577 ms
+[0] GET /api/intelligence/dashboard 200 - - 0.900 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /images/sherps-mascot.svg 500 214 - 0.384 ms
+[0] GET /images/sherps-icon.svg 500 214 - 0.452 ms
+[0] Unhandled error: [Error: ENOENT: no such file or directory, stat '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html'] {
+[0]   errno: -2,
+[0]   code: 'ENOENT',
+[0]   syscall: 'stat',
+[0]   path: '/Users/ferncliffadmin/clawd/projects/thesalessherpa/client/build/index.html',
+[0]   expose: false,
+[0]   statusCode: 404,
+[0]   status: 404
+[0] }
+[0] GET /api/accounts 200 316536 - 2.487 ms
+[0] GET /api/accounts 200 316536 - 1.594 ms
+[0] GET /api/intelligence/dashboard 200 1348 - 0.391 ms
+[1] The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+[1] npm run client:dev exited with code 1
+[0] [INFO] 10:44:21 Restarting: /Users/ferncliffadmin/clawd/projects/thesalessherpa/src/server/app.ts has been modified
+[0] Error: listen EADDRINUSE: address already in use :::5001
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at Function.listen (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express/lib/application.js:635:24)
+[0]     at Object.<anonymous> (/Users/ferncliffadmin/clawd/projects/thesalessherpa/src/server/app.ts:973:7)
+[0]     at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)
+[0]     at Module._compile (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/source-map-support/source-map-support.js:521:25)
+[0]     at Module.m._compile (/private/var/folders/hz/1z4jg19d36ngsmyc6v6406gw0000gn/T/ts-node-dev-hook-5668465783723655.js:69:33)
+[0]     at node:internal/modules/cjs/loader:1839:10
+[0]     at require.extensions..jsx.require.extensions..js (/private/var/folders/hz/1z4jg19d36ngsmyc6v6406gw0000gn/T/ts-node-dev-hook-5668465783723655.js:114:20)
+[0] [ERROR] 10:44:21 Error: listen EADDRINUSE: address already in use :::5001
+[0] [INFO] 10:44:38 Restarting: /Users/ferncliffadmin/clawd/projects/thesalessherpa/src/server/services/relationshipMappingService.ts has been modified
+[0] Error: listen EADDRINUSE: address already in use :::5001
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at Function.listen (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/express/lib/application.js:635:24)
+[0]     at Object.<anonymous> (/Users/ferncliffadmin/clawd/projects/thesalessherpa/src/server/app.ts:973:7)
+[0]     at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)
+[0]     at Module._compile (/Users/ferncliffadmin/clawd/projects/thesalessherpa/node_modules/source-map-support/source-map-support.js:521:25)
+[0]     at Module.m._compile (/private/var/folders/hz/1z4jg19d36ngsmyc6v6406gw0000gn/T/ts-node-dev-hook-5668465783723655.js:69:33)
+[0]     at node:internal/modules/cjs/loader:1839:10
+[0]     at require.extensions..jsx.require.extensions..js (/private/var/folders/hz/1z4jg19d36ngsmyc6v6406gw0000gn/T/ts-node-dev-hook-5668465783723655.js:114:20)
+[0] [ERROR] 10:44:39 Error: listen EADDRINUSE: address already in use :::5001
+[0] npm run server:dev exited with code 0

@@ -1,0 +1,49 @@
+{
+  "totalConnections": 29,
+  "incomingConnections": 26,
+  "outgoingConnections": 3,
+  "recentConnections": 10,
+  "topProspects": [
+    {
+      "name": "Juan Diego Gnecco",
+      "linkedinUrl": "https://www.linkedin.com/in/juan-diego-gnecco",
+      "message": "Dear Matt,  I'm working with a client looking into the market for Tenant Screening Services.  They are hoping to connect with professionals.  Might you have a few minutes to discuss today?  Best,  Jua...",
+      "date": "2026-01-26"
+    },
+    {
+      "name": "Michael Apollo",
+      "linkedinUrl": "https://www.linkedin.com/in/michaelapollo",
+      "message": "Hi Matt,   I host Leading Minds Revealed, a short-form podcast featuring conversations with leaders in the tech space. Your work stood out to me, and I’d love to invite you as a guest.  Let’s connect ...",
+      "date": "2026-01-02"
+    },
+    {
+      "name": "Eric J. Becker",
+      "linkedinUrl": "https://www.linkedin.com/in/eric-j-becker-72837715",
+      "message": "Hi  Matt , we have a number of mutual connections so I thought I'd reach out and connect.  Eric",
+      "date": "2023-11-02"
+    },
+    {
+      "name": "Cherise Bartlett",
+      "linkedinUrl": "https://www.linkedin.com/in/cherise-bartlett-8a72b019b",
+      "message": "Hi Matt! I wanted to connect with you to see if you're open for a discussion about lead generation and appointment setting services for your business.",
+      "date": "2023-06-13"
+    }
+  ],
+  "recentOutreach": [
+    {
+      "name": "Cassandra Enger",
+      "linkedinUrl": "https://www.linkedin.com/in/cassandraenger",
+      "date": "2025-12-05"
+    },
+    {
+      "name": "Brian Anderson",
+      "linkedinUrl": "https://www.linkedin.com/in/briananderson913",
+      "date": "2025-11-06"
+    },
+    {
+      "name": "Aga  Partynska",
+      "linkedinUrl": "https://www.linkedin.com/in/aga-partynska-58725521",
+      "date": "2025-09-09"
+    }
+  ]
+}

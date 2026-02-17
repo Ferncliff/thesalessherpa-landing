@@ -1,0 +1,36 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sherps Icon Version - Minimal & Clean -->
+  <defs>
+    <linearGradient id="orangeIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle with subtle gradient -->
+  <circle cx="32" cy="32" r="30" fill="url(#orangeIcon)"/>
+  <circle cx="32" cy="32" r="30" fill="white" opacity="0.1"/>
+  
+  <!-- Simple mountain silhouette -->
+  <polygon points="8,45 18,35 28,40 36,30 44,38 56,45 56,56 8,56" fill="white" opacity="0.3"/>
+  
+  <!-- Sherps head -->
+  <circle cx="32" cy="28" r="12" fill="white"/>
+  
+  <!-- Sherpa hat -->
+  <ellipse cx="32" cy="20" rx="14" ry="6" fill="#1E3A8A"/>
+  <rect x="24" y="16" width="16" height="8" rx="8" fill="#1E3A8A"/>
+  
+  <!-- Eyes -->
+  <circle cx="28" cy="26" r="1.5" fill="#1F2937"/>
+  <circle cx="36" cy="26" r="1.5" fill="#1F2937"/>
+  
+  <!-- Smile -->
+  <path d="M 26 32 Q 32 36 38 32" stroke="#1F2937" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <ellipse cx="32" cy="45" rx="14" ry="12" fill="white"/>
+  
+  <!-- Backpack indicator -->
+  <rect x="26" y="38" width="12" height="4" rx="2" fill="#1E3A8A"/>
+</svg>

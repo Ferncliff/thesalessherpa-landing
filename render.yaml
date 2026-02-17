@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: thesalessherpa-api
+    env: node
+    buildCommand: npm install
+    startCommand: node src/server/app.js
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT  
+        value: 10000
+      - key: FRONTEND_URL
+        value: https://thesalessherpa.ai
+      - key: DEMO_MODE
+        value: true
+      - key: MOCK_DATA
+        value: true
+      - key: JWT_SECRET
+        value: thesalessherpa_prod_jwt_secret_key_2026_secure
+      - key: ENCRYPTION_KEY  
+        value: thesalessherpa_prod_encrypt_key_32ch
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 900000
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: 100
+      - key: LOG_LEVEL
+        value: info
+      - key: OPENAI_API_KEY
+        value: demo_openai_key_production
+      - key: SALESFORCE_CLIENT_ID
+        value: demo_salesforce_client_id_prod

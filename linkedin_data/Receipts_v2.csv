@@ -1,0 +1,7 @@
+First Name,Last Name,Billing Country,Postal Code,Transaction Made At,Payment Method Type,Invoice Number,Description,Tax Amount,Sub Total,Total Amount,Currency Code
+Matt,Edwards,us,44333,11/28/17 12:00 AM UTC,CREDIT_CARD,3513077334,Bundle of Career subscription with Group and LIL,20.24,320.12,320.12,USD
+Matt,Edwards,us,44333,11/28/16 12:00 AM UTC,CREDIT_CARD,3050857714,Bundle of Career subscription with Group and LIL,20.24,320.12,320.12,USD
+Matt,Edwards,US,75287,02/13/26 02:20 PM UTC,CARD,109205332741,Sales Navigator Core,3.96,59.99,63.95,USD
+Matt,Edwards,US,75287,03/29/25 07:57 PM UTC,CARD,10186388893,Premium Career,19.79,239.88,259.67,USD
+Matt,Edwards,US,75287,03/29/24 07:57 PM UTC,CARD,1012885959,Premium Career,19.79,239.88,259.67,USD
+Matt,Edwards,US,75287,02/29/24 07:57 PM UTC,CARD,1092456263,Premium Career,0.00,0.00,0.00,USD

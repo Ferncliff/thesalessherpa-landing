@@ -1,0 +1,300 @@
+{
+  "user": "Matt Edwards",
+  "exportDate": "2026-02-13T15:41:08.065Z",
+  "totalConnections": 1247,
+  "connections": [
+    {
+      "id": "matt-edwards-linkedin-001",
+      "firstName": "Sarah",
+      "lastName": "Johnson", 
+      "fullName": "Sarah Johnson",
+      "title": "VP HR Technology",
+      "company": "WPP",
+      "industry": "Advertising & Marketing",
+      "location": "New York, NY",
+      "connectionDate": "2023-08-15",
+      "mutualConnections": 12,
+      "interactionHistory": [
+        {"type": "message", "date": "2024-01-10", "direction": "received"},
+        {"type": "endorsement", "date": "2023-12-05", "direction": "given"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["hr-tech", "potential-champion", "wpp-contact"]
+    },
+    {
+      "id": "matt-edwards-linkedin-002", 
+      "firstName": "Dr. Michael",
+      "lastName": "Chen",
+      "fullName": "Dr. Michael Chen",
+      "title": "Research Director",
+      "company": "Battelle Memorial Institute", 
+      "industry": "Research & Development",
+      "location": "Columbus, OH",
+      "connectionDate": "2022-11-20",
+      "mutualConnections": 8,
+      "interactionHistory": [
+        {"type": "comment", "date": "2024-02-01", "direction": "given"},
+        {"type": "post_like", "date": "2024-01-28", "direction": "received"}
+      ],
+      "relationshipStrength": "medium",
+      "tags": ["battelle", "research", "dod-contracts", "security-clearance"]
+    },
+    {
+      "id": "matt-edwards-linkedin-003",
+      "firstName": "Jennifer",
+      "lastName": "Walsh",
+      "fullName": "Jennifer Walsh", 
+      "title": "Director, People Operations",
+      "company": "Uber",
+      "industry": "Technology",
+      "location": "San Francisco, CA",
+      "connectionDate": "2024-06-12",
+      "mutualConnections": 15,
+      "interactionHistory": [
+        {"type": "message", "date": "2024-12-15", "direction": "sent"},
+        {"type": "connection_request", "date": "2024-06-12", "direction": "accepted"}
+      ],
+      "relationshipStrength": "warm",
+      "tags": ["uber", "people-ops", "background-screening", "recent-contact"]
+    },
+    {
+      "id": "matt-edwards-linkedin-004",
+      "firstName": "Marcus",
+      "lastName": "Thompson",
+      "fullName": "Marcus Thompson",
+      "title": "Chief People Officer", 
+      "company": "Maximus",
+      "industry": "Government Services",
+      "location": "Reston, VA",
+      "connectionDate": "2023-03-08",
+      "mutualConnections": 6,
+      "interactionHistory": [
+        {"type": "endorsement", "date": "2023-08-20", "direction": "received"},
+        {"type": "post_share", "date": "2023-07-10", "direction": "given"}
+      ],
+      "relationshipStrength": "medium",
+      "tags": ["maximus", "government", "cpo", "hr-executive"]
+    },
+    {
+      "id": "matt-edwards-linkedin-005",
+      "firstName": "Lisa",
+      "lastName": "Rodriguez",
+      "fullName": "Lisa Rodriguez",
+      "title": "VP Talent Acquisition",
+      "company": "Tetra Tech",
+      "industry": "Engineering Services", 
+      "location": "Pasadena, CA",
+      "connectionDate": "2023-09-22",
+      "mutualConnections": 9,
+      "interactionHistory": [
+        {"type": "message", "date": "2023-12-03", "direction": "received"},
+        {"type": "recommendation", "date": "2023-10-15", "direction": "given"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["tetra-tech", "engineering", "talent-acquisition", "recommendation"]
+    },
+    {
+      "id": "matt-edwards-linkedin-006",
+      "firstName": "Robert",
+      "lastName": "Kim",
+      "fullName": "Robert Kim",
+      "title": "Senior HR Director",
+      "company": "JPMorgan Chase",
+      "industry": "Financial Services",
+      "location": "New York, NY", 
+      "connectionDate": "2022-05-10",
+      "mutualConnections": 18,
+      "interactionHistory": [
+        {"type": "message", "date": "2024-01-20", "direction": "sent"},
+        {"type": "post_like", "date": "2024-02-05", "direction": "given"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["jpmorgan", "financial-services", "hr-director", "frequent-contact"]
+    },
+    {
+      "id": "matt-edwards-linkedin-007",
+      "firstName": "Amanda",
+      "lastName": "Foster",
+      "fullName": "Amanda Foster",
+      "title": "Director of Compliance",
+      "company": "Wells Fargo",
+      "industry": "Financial Services",
+      "location": "Charlotte, NC",
+      "connectionDate": "2023-07-18",
+      "mutualConnections": 11,
+      "interactionHistory": [
+        {"type": "endorsement", "date": "2024-01-05", "direction": "given"},
+        {"type": "comment", "date": "2023-11-12", "direction": "received"}
+      ],
+      "relationshipStrength": "medium",
+      "tags": ["wells-fargo", "compliance", "financial-services", "background-checks"]
+    },
+    {
+      "id": "matt-edwards-linkedin-008",
+      "firstName": "David",
+      "lastName": "Patel",
+      "fullName": "David Patel",
+      "title": "VP Human Resources",
+      "company": "Lockheed Martin",
+      "industry": "Aerospace & Defense",
+      "location": "Bethesda, MD",
+      "connectionDate": "2022-12-05",
+      "mutualConnections": 14,
+      "interactionHistory": [
+        {"type": "message", "date": "2023-06-15", "direction": "received"},
+        {"type": "connection_request", "date": "2022-12-05", "direction": "sent"}
+      ],
+      "relationshipStrength": "warm",
+      "tags": ["lockheed-martin", "defense", "security-clearance", "government-contracts"]
+    },
+    {
+      "id": "matt-edwards-linkedin-009",
+      "firstName": "Emily",
+      "lastName": "Zhang",
+      "fullName": "Emily Zhang", 
+      "title": "Chief Talent Officer",
+      "company": "Salesforce",
+      "industry": "Software",
+      "location": "San Francisco, CA",
+      "connectionDate": "2024-01-30",
+      "mutualConnections": 22,
+      "interactionHistory": [
+        {"type": "message", "date": "2024-02-01", "direction": "sent"},
+        {"type": "post_like", "date": "2024-02-10", "direction": "received"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["salesforce", "tech", "cto", "recent-contact", "warm-relationship"]
+    },
+    {
+      "id": "matt-edwards-linkedin-010",
+      "firstName": "John",
+      "lastName": "Mitchell",
+      "fullName": "John Mitchell",
+      "title": "Director, Security & Risk", 
+      "company": "Bank of America",
+      "industry": "Financial Services", 
+      "location": "Chicago, IL",
+      "connectionDate": "2023-04-12",
+      "mutualConnections": 13,
+      "interactionHistory": [
+        {"type": "endorsement", "date": "2023-09-25", "direction": "received"},
+        {"type": "post_share", "date": "2023-08-07", "direction": "given"}
+      ],
+      "relationshipStrength": "medium",
+      "tags": ["bank-of-america", "security", "risk-management", "background-screening"]
+    },
+    {
+      "id": "matt-edwards-linkedin-011",
+      "firstName": "Karen",
+      "lastName": "Williams",
+      "fullName": "Karen Williams",
+      "title": "VP People & Culture",
+      "company": "General Dynamics",
+      "industry": "Aerospace & Defense",
+      "location": "Falls Church, VA",
+      "connectionDate": "2023-01-15",
+      "mutualConnections": 7,
+      "interactionHistory": [
+        {"type": "message", "date": "2023-05-20", "direction": "received"},
+        {"type": "recommendation", "date": "2023-03-10", "direction": "given"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["general-dynamics", "defense", "people-culture", "security-screening"]
+    },
+    {
+      "id": "matt-edwards-linkedin-012",
+      "firstName": "Alex",
+      "lastName": "Rivera",
+      "fullName": "Alex Rivera", 
+      "title": "Senior Director HR",
+      "company": "Boeing",
+      "industry": "Aerospace",
+      "location": "Seattle, WA",
+      "connectionDate": "2022-08-20",
+      "mutualConnections": 16,
+      "interactionHistory": [
+        {"type": "post_like", "date": "2024-01-15", "direction": "given"},
+        {"type": "comment", "date": "2023-12-22", "direction": "received"}
+      ],
+      "relationshipStrength": "warm",
+      "tags": ["boeing", "aerospace", "hr-director", "security-clearance"]
+    },
+    {
+      "id": "matt-edwards-linkedin-013",
+      "firstName": "Michelle",
+      "lastName": "Davis",
+      "fullName": "Michelle Davis",
+      "title": "Director, Risk Management",
+      "company": "American Express",
+      "industry": "Financial Services",
+      "location": "New York, NY",
+      "connectionDate": "2023-10-08", 
+      "mutualConnections": 19,
+      "interactionHistory": [
+        {"type": "message", "date": "2024-01-25", "direction": "sent"},
+        {"type": "endorsement", "date": "2024-02-08", "direction": "received"}
+      ],
+      "relationshipStrength": "strong",
+      "tags": ["american-express", "risk", "financial-services", "fraud-prevention"]
+    },
+    {
+      "id": "matt-edwards-linkedin-014",
+      "firstName": "James",
+      "lastName": "Anderson",
+      "fullName": "James Anderson",
+      "title": "Chief People Officer",
+      "company": "Northrop Grumman", 
+      "industry": "Aerospace & Defense",
+      "location": "Falls Church, VA",
+      "connectionDate": "2022-06-30",
+      "mutualConnections": 10,
+      "interactionHistory": [
+        {"type": "connection_request", "date": "2022-06-30", "direction": "accepted"},
+        {"type": "post_share", "date": "2023-04-18", "direction": "given"}
+      ],
+      "relationshipStrength": "medium",
+      "tags": ["northrop-grumman", "defense", "cpo", "government-contracts"]
+    },
+    {
+      "id": "matt-edwards-linkedin-015",
+      "firstName": "Stephanie",
+      "lastName": "Lee",
+      "fullName": "Stephanie Lee",
+      "title": "VP Talent Management",
+      "company": "Raytheon Technologies",
+      "industry": "Aerospace & Defense", 
+      "location": "Waltham, MA",
+      "connectionDate": "2023-11-12",
+      "mutualConnections": 8,
+      "interactionHistory": [
+        {"type": "endorsement", "date": "2024-01-12", "direction": "given"},
+        {"type": "message", "date": "2023-12-20", "direction": "received"}
+      ],
+      "relationshipStrength": "warm",
+      "tags": ["raytheon", "defense", "talent-management", "aerospace"]
+    }
+  ],
+  "metadata": {
+    "industries": {
+      "Financial Services": 4,
+      "Aerospace & Defense": 5, 
+      "Technology": 2,
+      "Advertising & Marketing": 1,
+      "Research & Development": 1,
+      "Engineering Services": 1,
+      "Government Services": 1,
+      "Software": 1
+    },
+    "connectionStrengths": {
+      "strong": 6,
+      "warm": 4,
+      "medium": 5
+    },
+    "topCompanies": [
+      "WPP", "Battelle", "Uber", "Maximus", "Tetra Tech", 
+      "JPMorgan Chase", "Wells Fargo", "Lockheed Martin", 
+      "Salesforce", "Bank of America", "General Dynamics",
+      "Boeing", "American Express", "Northrop Grumman", "Raytheon"
+    ]
+  }
+}

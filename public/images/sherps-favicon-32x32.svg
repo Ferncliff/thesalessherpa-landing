@@ -1,0 +1,32 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sherps Favicon - 32x32 -->
+  <defs>
+    <linearGradient id="orangeFavicon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#orangeFavicon)"/>
+  
+  <!-- Sherps head -->
+  <circle cx="16" cy="14" r="6" fill="white"/>
+  
+  <!-- Sherpa hat -->
+  <ellipse cx="16" cy="10" rx="7" ry="3" fill="#1E3A8A"/>
+  <rect x="12" y="8" width="8" height="4" rx="4" fill="#1E3A8A"/>
+  
+  <!-- Eyes -->
+  <circle cx="14" cy="13" r="0.8" fill="#1F2937"/>
+  <circle cx="18" cy="13" r="0.8" fill="#1F2937"/>
+  
+  <!-- Smile -->
+  <path d="M 13 16 Q 16 18 19 16" stroke="#1F2937" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <ellipse cx="16" cy="23" rx="7" ry="6" fill="white"/>
+  
+  <!-- Backpack */
+  <rect x="13" y="19" width="6" height="2" rx="1" fill="#1E3A8A"/>
+</svg>

@@ -1,0 +1,95 @@
+{
+  "opportunities": [
+    {
+      "accountId": "matt_acc_089",
+      "accountName": "Amica Mutual Insurance",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Invite  for coffee to discuss industry challenges and potential mutual opportunities",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_087",
+      "accountName": "Antea",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Reference recent industry trends and ask  for insights about challenges at Antea",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_076",
+      "accountName": "Associated Banc-Corp",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Invite  for coffee to discuss industry challenges and potential mutual opportunities",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_027",
+      "accountName": "Assured Partners",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Reach out to  mentioning shared First Advantage context and interest in connecting with their team",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_042",
+      "accountName": "Aurubis",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Share relevant case study with  and request introduction to appropriate decision maker",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_124",
+      "accountName": "Avista Capital",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Reference recent industry trends and ask  for insights about challenges at Avista Capital",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_004",
+      "accountName": "Battelle",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Invite  for coffee to discuss industry challenges and potential mutual opportunities",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_009",
+      "accountName": "BTPN",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Reach out to  mentioning shared First Advantage context and interest in connecting with their team",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_130",
+      "accountName": "California Square",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Reach out to  mentioning shared First Advantage context and interest in connecting with their team",
+      "ats": "Workday"
+    },
+    {
+      "accountId": "matt_acc_093",
+      "accountName": "Colonial Group",
+      "urgency": 65,
+      "introPath": "Matt Edwards →  () → Target Decision Maker",
+      "connectionStrength": 40,
+      "strategy": "Share relevant case study with  and request introduction to appropriate decision maker",
+      "ats": "Workday"
+    }
+  ],
+  "generatedAt": "2026-02-13T17:47:53.557Z"
+}

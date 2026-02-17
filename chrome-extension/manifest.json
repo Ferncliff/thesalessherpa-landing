@@ -1,0 +1,73 @@
+{
+  "manifest_version": 3,
+  "name": "TheSalesSherpa LinkedIn Connector",
+  "version": "1.0.0",
+  "description": "Extract LinkedIn connection data for warm introduction intelligence",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "identity"
+  ],
+  
+  "host_permissions": [
+    "https://*.linkedin.com/*",
+    "https://thesalessherpa.ai/*",
+    "https://localhost:3000/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/*"
+      ],
+      "js": [
+        "content/linkedin-parser.js",
+        "content/connection-extractor.js",
+        "content/profile-analyzer.js"
+      ],
+      "css": [
+        "content/sherpa-overlay.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "TheSalesSherpa LinkedIn Connector",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "options_page": "options/options.html",
+  
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/sherpa-widget.html",
+        "icons/*.png",
+        "styles/*.css"
+      ],
+      "matches": [
+        "https://*.linkedin.com/*"
+      ]
+    }
+  ],
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
