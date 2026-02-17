@@ -1,7 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const { calculateUrgencyScore, getAccountIntelligence } = require('../services/intelligenceService');
-const { findRelationshipPaths } = require('../services/relationshipService');
+// TEMP: Disable complex services for initial deployment
+// const { calculateUrgencyScore, getAccountIntelligence } = require('../services/intelligenceService');
+// const { findRelationshipPaths } = require('../services/relationshipService');
+
+// Temporary mock functions
+const calculateUrgencyScore = (account) => Math.floor(Math.random() * 40) + 60; // 60-100
+const getAccountIntelligence = (account) => ({ insights: [`High-priority account: ${account.name}`] });
+const findRelationshipPaths = () => [];
 
 // Mock data for demo - In production, this would come from a database
 const mockAccounts = [
