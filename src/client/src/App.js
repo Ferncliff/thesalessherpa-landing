@@ -11,6 +11,7 @@ import Accounts from './pages/Accounts';
 import AccountDetail from './pages/AccountDetail';
 import Relationships from './pages/Relationships';
 import CadenceMatrix from './components/CadenceMatrix';
+import CadenceTracker from './components/CadenceTracker';
 import ATSIntelligence from './components/ATSIntelligence';
 import AccountCommandCenter from './components/AccountCommandCenter';
 import DailyAccountabilityPage from './pages/DailyAccountabilityPage';
@@ -19,6 +20,7 @@ import LinkedInIntroSuggestions from './components/LinkedInIntroSuggestions';
 import Intelligence from './pages/Intelligence';
 import Salesforce from './pages/Salesforce';
 import Landing from './pages/Landing';
+import StyleDNA from './components/StyleDNA';
 
 // Dashboard Layout Component for protected routes
 const DashboardLayout = ({ children }) => {
@@ -88,6 +90,11 @@ function App() {
               <CadenceMatrix />
             </DashboardLayout>
           } />
+          <Route path="/fa/mattedwards/tracker" element={
+            <DashboardLayout>
+              <CadenceTracker />
+            </DashboardLayout>
+          } />
           <Route path="/fa/mattedwards/ats" element={
             <DashboardLayout>
               <ATSIntelligence />
@@ -101,6 +108,11 @@ function App() {
           <Route path="/fa/mattedwards/salesforce" element={
             <DashboardLayout>
               <Salesforce />
+            </DashboardLayout>
+          } />
+          <Route path="/fa/mattedwards/style-dna" element={
+            <DashboardLayout>
+              <StyleDNA />
             </DashboardLayout>
           } />
           

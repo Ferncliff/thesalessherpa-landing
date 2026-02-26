@@ -11,11 +11,13 @@ import {
   CalendarIcon,
   Bars3Icon,
   XMarkIcon,
-  BellIcon
+  BellIcon,
+  SparklesIcon
 } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Dashboard', href: '/fa/mattedwards', icon: HomeIcon },
+  { name: '🎯 Cadence Tracker', href: '/fa/mattedwards/tracker', icon: ArrowPathIcon },
   { name: 'Daily Action Plan', href: '/fa/mattedwards/daily', icon: CalendarIcon },
   { name: 'Accounts', href: '/fa/mattedwards/accounts', icon: BuildingOfficeIcon },
   { name: 'LinkedIn Network', href: '/fa/mattedwards/network', icon: UsersIcon },
@@ -25,6 +27,7 @@ const navigation = [
   { name: 'ATS Intelligence', href: '/fa/mattedwards/ats', icon: BuildingOfficeIcon },
   { name: 'Intelligence', href: '/fa/mattedwards/intelligence', icon: LightBulbIcon },
   { name: 'Salesforce', href: '/fa/mattedwards/salesforce', icon: CloudArrowUpIcon },
+  { name: '🧬 Style DNA', href: '/fa/mattedwards/style-dna', icon: SparklesIcon },
 ];
 
 function classNames(...classes) {
